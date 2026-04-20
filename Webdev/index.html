@@ -3,165 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website by Dami</title>
-  <meta name="description" content="A clean, simple one-page website template.">
-  <style>
-    :root{
-      --accent:#0066cc;
-      --muted:#6b7280;
-      --bg:#f7fafc;
-      --card:#ffffff;
-      --radius:12px;
-      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
-    .container{max-width:1000px;margin:32px auto;padding:24px}
-
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#00b4ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-    nav a{margin-left:16px;color:var(--muted);text-decoration:none}
-    nav a:hover{color:var(--accent)}
-
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:28px;align-items:center}
-    .card{background:var(--card);padding:24px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.06)}
-    h1{margin:0 0 12px;font-size:28px}
-    p.lead{margin:0 0 16px;color:var(--muted)}
-    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none}
-
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
-    .feature{padding:18px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid #eef2ff}
-    .feature h3{margin:0 0 8px;font-size:16px}
-    .feature p{margin:0;color:var(--muted);font-size:14px}
-
-    footer{margin-top:28px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
-
-    /* Responsive */
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .features{grid-template-columns:repeat(2,1fr)}
-    }
-    @media (max-width:560px){
-      .features{grid-template-columns:1fr}
-      nav a{display:none}
-    }
-
-    /* small form styles */
-    form label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
-    input, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef9;font-size:14px}
-    button{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
-    .muted{color:var(--muted);font-size:13px}
-  </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Hot Beans Web</title>
 </head>
+
 <body>
-    <div class="container">
+
+    <!-- Website Header -->
     <header>
-      <div class="brand">
-        <div class="logo">DO</div>
         <div>
-          <strong>Dami</strong>
-          <div class="muted">Simple Website Template</div>
+            <div class="headdiv1">
+                <h1>Hot Beans Web</h1>
+            </div>
+            <div class="headdiv2">
+                <img src="beans.jpg" alt="Hot Beans Logo" style="width: 300px; height: 300px;">
+            </div>
         </div>
-      </div>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
+    <!-- Navigation menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#trainees">Trainee Profiles</a>
+        <a href="#careers">Careers</a>
+        <a href="#apply">Apply</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main page content -->
     <main>
-      <section class="hero">
-        <div>
-          <div class="card">
-            <h1>Clean &amp; Minimal One‑Page Site</h1>
-            <p class="lead">A compact starting template for a personal profile, landing page, or small project. Mobile friendly and easy to customize.</p>
-            <a class="cta" href="#contact">Get in touch</a>
-          </div>
 
-          <div class="features" id="features">
-            <div class="feature">
-              <h3>Fast to edit</h3>
-              <p>All content in one file, quick to modify and deploy.</p>
-            </div>
-            <div class="feature">
-              <h3>Responsive</h3>
-              <p>Layouts adapt from desktop to mobile without extra libraries.</p>
-            </div>
-            <div class="feature">
-              <h3>Accessible</h3>
-              <p>Readable fonts, clear contrast and semantic markup for screen readers.</p>
-            </div>
-          </div>
-        </div>
+        <section id="home">
+            <h2>Welcome to Hot Beans Web</h2>
+            <p> 
 
-        <aside>
-          <div class="card">
-            <h2 style="margin-top:0">About</h2>
-            <img src="goofy.jpg" alt="Goofball" style="width:300px;height:200px;">
-            <p class="muted">Hi, I'm Dami. Currently a lecturer in computing at Gloucestershire Colleger.</p>
-            <hr style="margin:14px 0;border:none;border-top:1px solid #eef2ff">
-            <p class="muted">Social</p>
-            <p><a href="#">Twitter</a> · <a href="#">GitHub</a> · <a href="#">LinkedIn</a></p>
-          </div>
+                We are a modern web development company dedicated to creating high-quality, user-friendly websites. Our team is passionate about innovation, collaboration, and helping businesses succeed online.
+                
+                We’re also committed to supporting new developers. If you’ve recently completed a web development course, Hot Beans Web offers a great place to build your skills and start your career.</p>
+        </section>
 
-          <div style="height:16px"></div>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Hot Beans Web is a web development company that designs and builds modern, responsive websites for a variety of clients. We focus on creating high-quality digital solutions that are both visually appealing and easy to use.
 
-          <div class="card" id="contact">
-            <h3 style="margin-top:0">Contact</h3>
-            <form onsubmit="handleSubmit(event)">
-              <label for="name">Your name</label>
-              <input id="name" type="text" placeholder="Say hello">
-              <label for="email" style="margin-top:10px">Email</label>
-              <input id="email" type="email" placeholder="you@example.com">
-              <label for="message" style="margin-top:10px">Message</label>
-              <textarea id="message" rows="4" placeholder="A short message"></textarea>
-              <div style="margin-top:10px;display:flex;gap:8px;justify-content:flex-end">
-                <button type="submit">Send</button>
-              </div>
-              <p id="status" class="muted" style="margin-top:10px;">We'll never share your email.</p>
+                Our team includes experienced developers as well as trainee web developers who are learning and growing in a supportive, real-world environment. We are passionate about technology, creativity, and helping new developers gain the skills they need to succeed in the industry.</p>
+        </section>
+
+        <section id="trainees">
+            <h2>Trainee Profiles</h2>
+            <p>Meet our trainee developers and learn about their journey into web development.</p>
+            Alex Carter – Trainee Web Developer
+Alex is a trainee web developer with skills in HTML, CSS, and basic JavaScript. He enjoys building simple, responsive websites and improving his coding skills through projects. His goal is to become a full-stack developer.
+<p>Sophie Patel – Trainee Web Developer
+    Sophie is learning web development with a focus on UI design and front-end coding. She has experience with HTML, CSS, and beginner JavaScript. She is passionate about creating user-friendly and visually appealing websites.</p>
+    <p>Liam Jones – Trainee Web Developer
+        Liam is a trainee developer developing his skills in HTML, CSS, and JavaScript. He enjoys problem-solving and working on interactive web pages. He aims to improve his backend knowledge in the future.</p>
+            
+        </section>
+
+        <section id="careers">
+            <h2>Careers</h2>
+            <p>Hot Beans Web is looking for enthusiastic web developers to join our team. This is a great opportunity for people who have completed web development training and want to start their career.
+
+                We are looking for candidates with skills in HTML, CSS, and JavaScript, as well as a willingness to learn and work in a team. At Hot Beans Web, you will gain hands-on experience and develop your skills in a supportive environment.</p>
+        </section>
+
+        <section id="apply">
+            <h2>Apply Now</h2>
+            <form onsubmit="showMessage(event)">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required><br><br>
+
+                <button type="submit">Submit Application</button>
             </form>
-          </div>
-        </aside>
-      </section>
+            <p id="formMessage" style="color: green; font-weight: bold;"></p>
+        </section>
 
-      <section class="card" style="margin-top:20px" id="about">
-        <h2 style="margin-top:0">More about this template</h2>
-        <p class="muted">This template is intentionally small and dependency-free. You can plug in Google Fonts, analytics, or a backend for the contact form later. Below is a tiny script to show a friendly message when the contact form is submitted.</p>
-      </section>
+        <section id="courses">
+            <h2>Courses</h2>
+            <p>To support your learning and career development, we recommend a range of web development courses. These courses help build essential skills in HTML, CSS, JavaScript, and modern frameworks.
+
+                Popular options include beginner to advanced training that covers both front-end and back-end development. Completing these courses will help you gain the knowledge and confidence needed to apply for web developer roles at companies like Hot Beans Web..</p>
+        
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us for more information.</p>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
-      © <span id="year"></span> Dami — Built with ❤️ — <span class="muted">Made simple</span>
+        &copy; 2026 Hot Beans Web
     </footer>
-  </div>
 
-  <script>
-    // Small JS to wire the contact form and year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <!-- JavaScript -->
+    <script src="func.js"></script>
 
-    function handleSubmit(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const status = document.getElementById('status');
-
-      if(!name || !email || !message){
-        status.textContent = 'Please fill in all fields.';
-        return;
-      }
-
-      // Simulate sending — replace with real API call as needed
-      status.textContent = 'Sending...';
-      setTimeout(()=>{
-        status.textContent = `Thanks, ${name}! Your message was received.`;
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('message').value = '';
-      }, 900);
-    }
-  </script>
 </body>
 </html>
